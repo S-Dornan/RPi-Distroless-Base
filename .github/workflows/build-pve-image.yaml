@@ -25,7 +25,7 @@ jobs:
           chmod +x $RUNNER_TEMP/sbom-tool
           
           # Scan the pve-base directory and output the manifest inside the _manifest subfolder
-          $RUNNER_TEMP/sbom-tool generate -b ./pve-base/_manifest -bc ./pve-base -pn PVEProdBase -pv 1.0.0 -ps SamDornan -nsb https://github.com/${{ github.repository }}/sbom/pve-prod-base -V Verbose
+          $RUNNER_TEMP/sbom-tool generate -b ./pve-base -bc ./pve-base -pn PVEProdBase -pv 1.0.0 -ps SamDornan -nsb https://github.com/${{ github.repository }}/sbom/pve-prod-base -V Verbose
 
       - name: Upload SBOM Artifact
         uses: actions/upload-artifact@v7
