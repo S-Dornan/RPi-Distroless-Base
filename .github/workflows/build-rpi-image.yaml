@@ -26,7 +26,7 @@ jobs:
           chmod +x $RUNNER_TEMP/sbom-tool
           
           # Adjusted paths to scan the root directory instead of ./brownout
-          $RUNNER_TEMP/sbom-tool generate -b ./rpi-base/_manifest -bc ./rpi-base -pn PiProdBase -pv 1.0.0 -ps SamDornan -nsb https://github.com/${{ github.repository }}/sbom/pi-prod-base -V Verbose
+          $RUNNER_TEMP/sbom-tool generate -b ./rpi-base -bc ./rpi-base -pn PiProdBase -pv 1.0.0 -ps SamDornan -nsb https://github.com/${{ github.repository }}/sbom/pi-prod-base -V Verbose
 
       - name: Upload SBOM Artifact
         uses: actions/upload-artifact@v7
