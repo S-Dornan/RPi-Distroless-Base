@@ -1,5 +1,6 @@
-# RPi-Minimal-Base
-Base minimal image for Raspberry Pi hardware monitoring stack
+# Push Monitor Base Images
+
+Base minimal images for hardware monitoring stacks
 
 > Copyright (C) 2026 Sam Dornan
 >
